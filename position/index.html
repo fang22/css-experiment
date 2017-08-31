@@ -4,80 +4,6 @@
 		<meta charset="utf-8" />
 		<title></title>
 		<style type="text/css">
-			#main{
-				background-color: blue;
-				max-width:1000px;//浏览器窗口变小不会影响看到所有内容，没有滚动条
-				margin: 0 auto;
-				/*height: 600px;*/
-			}
-			#main1{
-				background-color: blue;
-				width: 600px;//浏览器窗口变小看不见后面的内容，需要拖动滚动条
-				margin: 0 auto;
-				/*height: 600px;*/
-				}
-			.simple{
-				width: 500px;
-				margin: 20px auto;
-				background-color: red;
-				-webkit-box-sizing:border-box;
-				 /*box-sizing:border-box  使宽度一样*/
-				-moz-box-sizing: border-box;
-				box-sizing: border-box;
-			}
-			.fancy{
-				width: 500px;
-				margin: 20px auto;
-				padding: 50px;//边框填充50px
-				border-width: 10px;
-				/*注释后border消失*/
-				border: solid blue 10px;
-				background-color: gold;
-				-webkit-box-sizing:border-box;
-				-moz-box-sizing: border-box;
-				box-sizing: border-box;
-			}
-			.simple1{
-				width: 500px;
-				margin: 20px auto;
-				background-color: red;
-				-webkit-box-sizing:content-box;
-				-moz-box-sizing: content-box;
-				box-sizing: content-box;
-				/*box-sizing: content-box;是在宽度和高度之外绘制元素的内边距和边框。*/
-			}
-			.fancy1{
-				width: 500px;
-				margin: 20px auto;
-				padding: 50px;//边框填充50px
-				border-width: 10px;
-				/*注释后border消失*/
-				border: solid blue 10px;
-				background-color: gold;
-				-webkit-box-sizing: content-box;
-				-moz-box-sizing: content-box;
-				box-sizing: content-box;
-			}
-			.simple2{
-				width: 500px;
-				margin: 20px auto;
-				background-color: red;
-				/*-webkit-box-sizing:inherit;
-				-moz-box-sizing: inherit;
-				box-sizing: inherit;*/
-			}
-			.fancy2{
-				width: 500px;
-				margin: 20px auto;
-				padding: 50px;//边框填充50px
-				border-width: 10px;
-				/*注释后border消失*/
-				border: solid blue 10px;
-				background-color: gold;
-				/*-webkit-box-sizing: inherit;
-				-moz-box-sizing: inherit;
-				box-sizing: inherit;*/
-			}
 			.static{
 				position: static;
 			}
@@ -146,30 +72,6 @@
 		</style>
 	</head>
 	<body>
-		<div id="main">
-			你好
-		</div>
-		<div id="main1">
-			你好
-		</div>
-		<div class="simple">
-			你好
-		</div>
-		<div class="fancy">
-			你好
-		</div>
-		<div class="simple1">
-			你好
-		</div>
-		<div class="fancy1">
-			你好
-		</div>
-		<div class="simple2">
-			你好
-		</div>
-		<div class="fancy2">
-			你好
-		</div>
 		<div class="static">
 			默认值
 		</div>

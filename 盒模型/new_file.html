@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.simple{
+				width: 500px;
+				margin: 20px auto;
+				background-color: red;
+				-webkit-box-sizing:border-box;
+				 /*box-sizing:border-box  使宽度一样*/
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+			.fancy{
+				width: 500px;
+				margin: 20px auto;
+				padding: 50px;//边框填充50px
+				border-width: 10px;
+				/*注释后border消失*/
+				border: solid blue 10px;
+				background-color: gold;
+				-webkit-box-sizing:border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+			.simple1{
+				width: 500px;
+				margin: 20px auto;
+				background-color: red;
+				-webkit-box-sizing:content-box;
+				-moz-box-sizing: content-box;
+				box-sizing: content-box;
+				/*box-sizing: content-box;是在宽度和高度之外绘制元素的内边距和边框。*/
+			}
+			.fancy1{
+				width: 500px;
+				margin: 20px auto;
+				padding: 50px;//边框填充50px
+				border-width: 10px;
+				/*注释后border消失*/
+				border: solid blue 10px;
+				background-color: gold;
+				-webkit-box-sizing: content-box;
+				-moz-box-sizing: content-box;
+				box-sizing: content-box;
+			}
+			.simple2{
+				width: 500px;
+				margin: 20px auto;
+				background-color: red;
+				/*-webkit-box-sizing:inherit;
+				-moz-box-sizing: inherit;
+				box-sizing: inherit;*/
+			}
+			.fancy2{
+				width: 500px;
+				margin: 20px auto;
+				padding: 50px;//边框填充50px
+				border-width: 10px;
+				/*注释后border消失*/
+				border: solid blue 10px;
+				background-color: gold;
+				/*-webkit-box-sizing: inherit;
+				-moz-box-sizing: inherit;
+				box-sizing: inherit;*/
+			}
+		</style>
+	</head>
+	<body>
+		<div class="simple">
+			你好
+		</div>
+		<div class="fancy">
+			你好
+		</div>
+		<div class="simple1">
+			你好
+		</div>
+		<div class="fancy1">
+			你好
+		</div>
+		<div class="simple2">
+			你好
+		</div>
+		<div class="fancy2">
+			你好
+		</div>
+	</body>
+</html>
