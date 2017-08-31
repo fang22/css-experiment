@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+			.display{
+				width:500px;
+				height: 500px;
+				/*display: none;*/
+				/*不会占用网页位置*/
+				border: solid red;
+			}
+			.visibility{
+				width: 500px;
+				height: 500px;
+				visibility: hidden;
+				
+				border: solid blue;
+			}
+			.visibility2{
+				width: 500px;
+				height: 500px;
+				/*visibility: hidden;*/
+				/*会占用网页位置*/
+				border: solid yellow;
+			}
+			.margin{
+				/*width: 600px;*/
+				max-width: 600px;
+				/*max-width使浏览器不会因这个元素大于浏览器窗口而出现滚动条*/	
+				margin: 0 auto;
+				/*margin: 0 auto;属性会使块级元素居中，	浏览器窗口缩小会出现横向滚动条*/
+				border: solid green;
+			}
+			#auto{border: solid purple;
+					margin: 0 auto;
+		</style>
+	</head>
+	<body>
+		<div class="display">
+			
+		</div>
+		<div class="visibility">
+			
+		</div>
+		<div class="visibility2">
+			
+		</div>
+		<div class="margin">
+			
+		</div>
+		<span id="auto">hasdjkfhiuasdfsadfsuidfbajsgruasfbYEWTRSDHFysdfga</span>
+	</body>
+</html>
