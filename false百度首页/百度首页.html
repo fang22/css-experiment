@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>百度一下，你就知道</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body,p{
+				margin: 0;
+				padding: 0;
+				font: 12px arial;
+				background: #fff;
+				height: 100%;
+				display: block;
+				list-style: none;
+			}
+			header{
+				display: block;
+				text-align: center;
+				padding-bottom: 100px;
+			}
+			div{
+				display: block;
+			}
+			#ul {
+				display: block;
+				list-style: none;
+				z-index: 2;
+				text-align: center;
+				margin: 19px 0 5px;
+				padding: 0 96px 0 0;
+				position: absolute;
+				right: 0px;
+				top: 0;
+				color: #fff;
+				}
+				#ul a.li{
+				text-decoration: underline;
+				float: left;
+				font-weight: 700;
+				color: #333;
+				font-size: 13px;
+				margin-left: 20px;
+				line-height: 24px;
+				cursor: pointer;
+				overflow: hidden;
+				position: relative;
+				}
+				#ul a.li:hover{
+					color: #00c;
+				}
+				#ul a.en:hover, #ul a.pf:hover, #ul a.more:hover{
+					color: #00c;
+				}
+				#ul a.en{
+					display: inline-block;
+					color: #333;
+					font-size: 13px;
+					line-height: 24px;
+					margin-left: 20px;
+					text-decoration: underline;
+					float: left;
+					cursor: pointer;
+					}
+				#ul a.pf{
+					display: inline-block;
+					float: left;
+					color: #333;
+					line-height: 24px;
+					font-size: 13px;
+					margin-left: 20px;
+					overflow: hidden;
+					text-decoration: underline;
+					cursor: pointer;
+				}
+			#ul a.more{
+				display: block;
+				margin-left: 19px;
+				margin-right: 2px;
+				padding: 0;
+				width: 60px;
+				height: 23px;
+				background-color: #38f;
+				color: #fff
+				text-decoration: none;
+				position: absolute;
+				right: 10px;
+				float: left;
+				line-height: 24px;
+				border-bottom: 1px solid #38f;
+				font-size: 13px;
+				overflow: hidden;
+				cursor: pointer;
+			}
+			.form{
+				position: absolute;
+				top: 63px;
+				margin: 63px auto auto 25%;
+			}
+			.logo{
+				cursor: pointer;
+			}
+			img{
+				width: 270px;
+				height: 129px;
+			}
+			.search{
+				width: 641px;
+				display: block;
+				margin: 22px auto;
+			}
+			.frame{
+				border: 1px solid #b6b6b6;
+				width: 539px;
+				height: 34px;
+				display: inline-block;
+				position: relative;
+			}
+			#su{
+				display: block;
+				width: 100px;
+				height: 36px;
+				background: #3385ff;
+				border-bottom: 1px solid #2d78f4;
+				color: #fff;
+				font-size: 15px;
+				outline: medium;
+				float: right;
+				cursor: pointer;
+				align-items: flex-start;
+				position: relative;
+				right: 1px;
+			}
+			.sipt{
+				width: 526px;
+				height: 22px;
+				margin: 6px 0 0 7px;
+				padding: 0;
+				border: 0;
+				outline: none;
+			}
+			.soutu{
+				width: 18px;
+				height: 16px;
+				position: absolute;
+				right: 2%;
+				top: 25%;
+				/*margin-top: -8px;*/
+				background: #fff url(img/soutu.png)no-repeat;
+				background-image: -webkit-image-set(url(img/soutu.png)1x,url(img/soutu.png)2x);
+				cursor: pointer;
+			}
+			.baiduyixia{
+				width: auto;
+				height: auto;
+			}
+			input{
+				border: 0;
+				padding: 0;
+				word-spacing: normal;
+			    text-transform: none;
+			    text-indent: 0px;
+			    text-shadow: none;
+			    display: inline-block;
+			}
+			content{
+				position: absolute;
+				bottom: 140px;
+				text-align: center;
+				height: 60px;
+				width: 100%;
+			}
+			.Qr{
+				display: inline-block;
+			}
+			.code{
+				float: left;
+			}
+			.cd{
+				background: url(img/erweima.png);
+				width: 60px;
+				height: 60px;
+			}
+			.erweima{
+				color: #999;
+				line-height: 23px;
+				margin: 3px 0 0 5px;
+			}
+			.erweima p{
+				text-align: left;
+			}
+			p{
+				display: block;
+				-webkit-margin-before: 1em;
+				-webkit-margin-after: 1em;
+				-webkit-margin-start: 0px;
+				-webkit-margin-end: 0px;
+				position: absolute;
+				top: 60px;
+			}
+			.erweima p b{
+				color: #666;
+				font-weight: 700;
+			}
+			footer{
+				box-sizing: border-box;
+				border: 1px solid red;
+				height: 50px;
+				position: absolute;
+				bottom: 47px;
+				text-align: center;
+				width: 100%;
+				margin: 0 auto;
+				z-index: 0;
+				overflow: hidden;
+			}
+			#ftCon{
+				overflow: hidden;
+				margin: 0 auto;
+				text-align: center;
+			}
+			#ftConw,#ftConw a{
+				color: #999;
+			}
+			#ftConw{
+				text-align: center;
+				margin-left: 0;
+				display: inline-block;
+				line-height: 22px;
+				position: relative;
+				top: -2px;
+			}
+		</style>
+	</head>
+	<body>
+		<contaiiner>
+			<header>
+				<div id="ul">
+					<a class="li">新闻</a>
+					<a class="li">hao123</a>
+					<a class="li">地图</a>
+					<a class="li">视频</a>
+					<a class="li">贴吧</a>
+					<a class="li">学术</a>
+					<a class="en">登录</a>
+					<a class="pf">设置</a>
+					<a class="more">更多产品</a>
+				</div>
+				<div class="form">
+				<div class="logo">
+				<img src="img/bd_logo1.png"/>
+			</div>
+			<div class="search">
+				<span class="frame">
+					<span class="soutu"></span>
+					<input id="kw" name="wd" class="sipt" value maxlenght="255" autocomplete="off" />
+				</span>
+				<span class="baiduyixia">
+					<input type="submit" name="" id="su" value="百度一下" />
+				</span>
+			</div>
+			</div>
+			</header>
+			<content>
+				<div class="Qr">
+					<div class="code">
+						<div class="cd">
+							<div class="erweima">
+								<p>
+									<b>手机百度</b>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</content>
+			<footer>
+				<div id="ftCon">
+					<div id="ftConw">
+						<p id="1h">
+							<a href="">把百度设置为主页</a>
+							<a href="">关于百度</a>
+							<a href="">About&nbsp;&nbsp;Baidu</a>
+							<a href="">百度推广</a>
+						</p>
+						<p id="cp">
+							©2017&nbsp;baidu&nbsp;
+							<a href="">使用百度前必读</a>&nbsp;
+							<a href="">意见反馈</a>&nbsp;
+							<i class="c-icon-icrlogo"></i>&nbsp;
+							<a href="">京公网安备11000002000001号</a>&nbsp;
+							<i class="c-icon-jgwablogo"></i>
+						</p>
+					</div>
+				</div>
+			</footer>
+		</contaiiner>
+	</body>
+</html>
